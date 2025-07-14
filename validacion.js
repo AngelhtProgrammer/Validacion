@@ -41,7 +41,7 @@ let confirmPasswordValidation = false;
 let countriesValidation = false;
 
 
-// Funcion para habilitar el boton de envio del formulario
+// Funcion para habilitar el boton de envio del formulario              
 
 function confirmarInput() {
   const FormValido =
@@ -52,8 +52,9 @@ function confirmarInput() {
     confirmPasswordValidation &&
     countriesValidation;
     
-  botonForm.disabled = !FormValido;
+  botonForm.disabled = !FormValido ? true : botonForm.removeAttribute('disabled')
 }
+
 
 //  Funcion de validacion
 
@@ -62,7 +63,7 @@ function validation(e, regex, selector, info) {
   const passwordValue = password.value;
   let validate =
     regex === "confirmPassword"
-      ? passwordValue === inputValue
+      ? passwordValue === inputValue && passwordValue != ''
       : regex.test(inputValue); // if = ?   else = :
 
   if (validate) {
@@ -137,12 +138,13 @@ Form.addEventListener("submit", (e) => {
     phone: `${phoneCode.innerHTML} ${phoneN.value}`,
     password: password.value,
   };
-  const user2 = {
-    'username:': username.value,
-    'email:': emailC.value,
-    'phone:': `${phoneCode.innerHTML} ${phoneN.value}`,
-  };
-  
-    alert(`"Formulario enviado. Datos:", ${user2}`)
+    let mensaje = (
+      'Username: ' + username.value + "\n" +
+      'Email: ' + emailC.value + "\n" +   
+      'Phone: ' + `${phoneCode.innerHTML} ${phoneN.value}`
+    )
   console.log("Formulario enviado. Datos:", user);
+  console.log(mensaje);
+  alert(`Formulario enviado. \n Datos: \n ${mensaje}`)
 });
+
