@@ -16,6 +16,7 @@ let confirmPassword = document.querySelector("#confirmPassword");
 let phoneCode = document.querySelector("#phoneCode");
 let botonForm = document.querySelector("#botonFormulario");
 let Form = document.querySelector("#form");
+let infoP = document.querySelector("#information2");
 
 // Operador de propagacion.  Convierte los elementos en un array
 let arrayCountries = [...countries];
@@ -43,7 +44,7 @@ let countriesValidation = false;
 // Funcion para habilitar el boton de envio del formulario
 
 function confirmarInput() {
-  const isFormValid =
+  const FormValido =
     usernameValidation &&
     emailValidation &&
     phoneValidation &&
@@ -51,7 +52,7 @@ function confirmarInput() {
     confirmPasswordValidation &&
     countriesValidation;
     
-  botonForm.disabled = !isFormValid;
+  botonForm.disabled = !FormValido;
 }
 
 //  Funcion de validacion
@@ -110,6 +111,7 @@ countries.addEventListener("change", function () {
   let info = this.parentElement.children[2];
   countries.classList.add("correcto");
   phoneCode.classList.add("correcto");
+  infoP.classList.add("information")
   countriesValidation = codeNumber != "" ? true : false;
   confirmarInput()
 });
@@ -135,5 +137,12 @@ Form.addEventListener("submit", (e) => {
     phone: `${phoneCode.innerHTML} ${phoneN.value}`,
     password: password.value,
   };
+  const user2 = {
+    'username:': username.value,
+    'email:': emailC.value,
+    'phone:': `${phoneCode.innerHTML} ${phoneN.value}`,
+  };
+  
+    alert(`"Formulario enviado. Datos:", ${user2}`)
   console.log("Formulario enviado. Datos:", user);
 });
