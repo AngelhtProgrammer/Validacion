@@ -5,10 +5,6 @@ Este es una validaciòn de un formulario que utliliza principalmente Javascript 
 <img src="Captura de pantalla (2).png" width="800">
 </div>
 
-## Trivia quiz.
-
-To do the trivia go to the bottom of the blog where you will find a button with the word “TRIVIA” on it and click on it.
-There are six questions and at the end depending on the result you will get a different message on the screen.
 
 ***
 
