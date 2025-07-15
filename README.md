@@ -1,6 +1,6 @@
-# Validaciòn.
+# Validación.
 
-Este es una validaciòn de un formulario que utliliza principalmente Javascript para su funcionalidad.
+Este es una validación de un formulario que utliliza principalmente Javascript para su funcionalidad.
 
 ***
 
@@ -23,13 +23,13 @@ Este es una validaciòn de un formulario que utliliza principalmente Javascript 
 
 ## Archivos.
 
-- `index.html`: El archivo principal HTML contiene la estructura de la validaciòn.
+- `index.html`: El archivo principal HTML contiene la estructura de la validación.
 
-- `index.css`: El archivo CSS contiene los estilos de la validaciòn del formulario. (index.html)
+- `index.css`: El archivo CSS contiene los estilos de la validación del formulario. (index.html)
 
-- `Validacion.js`: El archivo Javascript es el que contiene la logistica de la validacion, incluye las funciones que validan que los datos sean correctos con lo señalado en el formulario.
+- `Validacion.js`: El archivo Javascript es el que contiene la logistica de la validación, incluye las funciones que validan que los datos sean correctos con lo señalado en el formulario.
 
-## Validaciòn del formulario.
+## Validación del formulario.
 
 Aqui el como se valida los datos enviados:
 
