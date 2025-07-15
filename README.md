@@ -1,6 +1,6 @@
-# Validacion
+# Validaciòn.
 
-Este es una validaciòn de un formulario que utliliza principalmente Javascript para sun funcionalidad.
+Este es una validaciòn de un formulario que utliliza principalmente Javascript para su funcionalidad.
 <div align="center">
 <img src="Captura de pantalla (2).png" width="800">
 </div>
@@ -14,13 +14,13 @@ Este es una validaciòn de un formulario que utliliza principalmente Javascript 
 
 - `index.html`: El archivo principal HTML contiene la estructura de la validaciòn.
 
-- `index.css`: El archivo CSS contiene los estilos de la validaciòn. (index.html)
+- `index.css`: El archivo CSS contiene los estilos de la validaciòn del formulario. (index.html)
 
-- `Validacion.js`: El archivo Javascript contiene la logistica de la validacion, incluye las funciones que validan que los datos sean correctos con lo señalado en el formulario.
+- `Validacion.js`: El archivo Javascript es el que contiene la logistica de la validacion, incluye las funciones que validan que los datos sean correctos con lo señalado en el formulario.
 
-## Validacion del formulario.
+## Validaciòn del formulario.
 
-Aqui el como se valida los datos
+Aqui el como se valida los datos enviados:
 
 ```python
 function validation(e, regex, selector, info) {
