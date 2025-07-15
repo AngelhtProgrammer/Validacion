@@ -4,6 +4,9 @@ Este es una validaciòn de un formulario que utliliza principalmente Javascript 
 <div align="center">
 <img src="Captura de pantalla (2).png" width="800">
 </div>
+
+***
+
 <div align="center">
 <img src="Captura de pantalla (3).png" width="800">
 </div>
