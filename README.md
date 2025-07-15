@@ -1,6 +1,11 @@
 # Validaciòn.
 
 Este es una validaciòn de un formulario que utliliza principalmente Javascript para su funcionalidad.
+
+***
+
+## Previsualización.
+
 <div align="center">
 <img src="Captura de pantalla (2).png" width="800">
 </div>
