@@ -62,9 +62,9 @@ function validation(e, regex, selector, info) {
   let inputValue = e.target.value;
   const passwordValue = password.value;
   let validate =
-    regex === "confirmPassword"
+    regex === "confirmPassword"            //  == compara el valor   === compara el valor y el tipo de dato
       ? passwordValue === inputValue && passwordValue != ''
-      : regex.test(inputValue); // if = ?   else = :
+      : regex.test(inputValue);         // if = ?   else = :        operador ternario (resumen 'if'  'else')
 
   if (validate) {
     selector.classList.remove("incorrecto");
